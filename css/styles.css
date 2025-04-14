@@ -7,74 +7,90 @@ tertirary color (beige): #F9F5F1;
 *{
     box-sizing: border-box;
 }
-
+html{
+    font-size: 62.5%;
+}
 body{
     background-color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.6;
-    color: #000000
+    color: #000000;
 }
-h1{
+h1,
+.h1{
     font-weight: 600;
-    font-size: 3.125em;
+    font-size: 5rem;
 }
 h2{
     font-weight: 500;
-    font-size: 3.125;
+    font-size: 5rem;
 }
 
 h3{
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 4rem;
 }
 h4{
     font-weight: 600;
-    font-size: 1.875;
+    font-size: 3rem;
 }
 h5{
     font-weight: 400;
-    font-size: 1.875;
+    font-size: 3rem;
 }
-p{
-    font-weight: 400;
-    font-size: 1.25;
+.text-l{
+    font-size: 2rem;
 }
 a{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
     color:#000000;
-    text-decoration: none;
 }
-img{
-    width: 100%;
+a:visited{
+    color: #000000;
 }
 a:hover,
 a:focus{
-    color: #000000;
-    text-decoration: underline;
-    font-weight: 600;
-}
-a:visited{
-    color: #6a4f4a;
+    color: #333333;
+    text-decoration: none;
 }
 a:active{
     color: #333333;
-    text-decoration: underline;
-    font-weight: 600;
-    transform: scale(0.97);
+    text-decoration: none;
 }
 a.button{
-    font-family: "Montserrat" sans-serif;
-    font-weight: 400;
     color: #FFFFFF;
     background-color: #000000;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     cursor: pointer;
     display: inline-block;
-    margin-bottom: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+a.button:visited{
+    color: #FFFFFF;
+}
+a.button:hover,
+a.button:focus,
+a.button:active{
+    background-color: #333333;
+}
+img{
+    width: 100%;
+}
+.project-card{
+    box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.15);
+    border-radius: 27px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.project-card_content-wrapper{
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+.project-card_image-wrapper{
+    padding: 2rem;
 }
