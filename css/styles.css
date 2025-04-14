@@ -1,0 +1,80 @@
+/*
+colors uesd:
+primary color (white): #FFFFFF;
+secondary color (black): #000000;
+tertirary color (beige): #F9F5F1;
+*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000000
+}
+h1{
+    font-weight: 600;
+    font-size: 3.125em;
+}
+h2{
+    font-weight: 500;
+    font-size: 3.125;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 2.5em;
+}
+h4{
+    font-weight: 600;
+    font-size: 1.875;
+}
+h5{
+    font-weight: 400;
+    font-size: 1.875;
+}
+p{
+    font-weight: 400;
+    font-size: 1.25;
+}
+a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color:#000000;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+a:hover,
+a:focus{
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+a:visited{
+    color: #6a4f4a;
+}
+a:active{
+    color: #333333;
+    text-decoration: underline;
+    font-weight: 600;
+    transform: scale(0.97);
+}
+a.button{
+    font-family: "Montserrat" sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 30px;
+}
