@@ -206,8 +206,7 @@ nav>ul>li>a.current{
 }
 
 /*styling project cards*/
-.project-card-full-border{
-    border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+.project-card::after{
     width: 100vw;
     margin-left: calc(-1 * 15px);
     margin-right: calc(-1 * 15px);
@@ -219,12 +218,14 @@ nav>ul>li>a.current{
     grid-template-columns: 1fr;
     padding: 2rem 0;
     gap: 0px; /*space between image-wrapper and content-wrapper*/
+    border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+
 }
 .project-card_image-wrapper{
     padding: 0 2rem; /*horizontal padding*/
 }
 .project-card_content-wrapper{
-    padding: 0 15px;
+    padding: 0;
 }
 .project-card_content-wrapper h3{
     margin-top: 16px;
@@ -247,6 +248,7 @@ a.button_all-projects{
     border: 1px solid #000000;
     border-radius: 20px;
     padding: 10px 20px;
+    margin-block-start: 20px;
     font-size: 1.6rem;
     font-weight: 500;
     cursor: pointer;
@@ -263,42 +265,60 @@ a.button_all-projects:active{
     background-color: #333333;
 }
 
+/*Syling main*/
+main{
+    padding-block-end: 20px;
+}
+
 /*Styling footer**/
-#footer-section{
+footer{
     background-color: #000000;
-    width: 100%;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
+footer h2,
+footer p{
+    margin: 0;
+}
+h2.contact{
+    font-size: 3rem;
+    line-height: 1;
+    color: #FFFFFF;
 }
 .contact-box{
-    color: #FFFFFF;
-    grid-template-columns: 1fr auto;
-    width: 100%;
+    padding-block: 20px;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-h3.contact{
-    margin-bottom: 0px;
-    padding: 20px 20px;
-    text-align: left;
-    color: #FFFFFF;
     align-items: center;
 }
 .contact-icons{
     display: flex;
-    justify-content: flex-end;
+    gap: 1em;
 }
 .contact-icons a{
-    color: #FFFFFF;
+    display: flex;
+    width: 2em;
+    background-color: #FFFFFF;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-icons svg{
     text-decoration: none;
-    font-weight: 500;
-    padding: 5px;
+    width: 1.5em;
 }
 .contact-icons a:hover{
     background-color: #333333;
 }
 .copyright{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-block: 20px;
+    background-color: #FFFFFF;
 }
 
 /*Styling the ABOUT.html*/
@@ -366,6 +386,11 @@ h3.contact{
 /* Styling Project-Pot*/
 #project-overview-section{
     padding: 0 15px;
+}
+.overview-header h1{
+    margin-top: 30px;
+    padding-block: 0;
+
 }
 .overview-header h2{
     font-size: 2rem;
@@ -435,6 +460,37 @@ a.case-study-button:active{
     font-weight: 400;
 }
 
+/*Medium devices (640px and larger) */
+@media only screen and (min-width:640px){
+    header{
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    nav{
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+}
+
+
+/*Large devices (1024px or larger)*/
+@media only screen and (min-width:1024px){
+
+}
+
+/*X-large devices (1440px or larger)*/
+@media only screen and (min-width:1440px){
+
+}
+
+@keyframes color-change{
+    from{fill: #edc655;}
+    to {fill:#f76414;}
+ 
+
+}
 
 
 
