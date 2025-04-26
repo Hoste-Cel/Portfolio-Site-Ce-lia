@@ -115,6 +115,9 @@ header{
 .container{
     padding: 0 15px;
 }
+.container--no-padding{
+    padding-inline: 0;
+}
 .row{
     margin: 25px 0;
 }
@@ -175,6 +178,12 @@ nav>ul>li>a.current{
     padding: 1px 15px;
 }
 
+/*Styling list Home page*/
+.no-list-styles{
+    color: #BABABA;
+    list-style: none;
+    padding: 0;
+}
 /*styling hero_list-wrapper*/
 .hero_list-wrapper-full{
     width: 100%;
@@ -369,13 +378,16 @@ h2.contact{
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
+.section-title_creative-kit h3{
+    margin: 0px; /*reset defeault marings*/
+}
 .lists{
     margin-top: 0px;
 }
 /*Styling h4 "Key Skills" and "Tools"*/
 .list-wrapper h4{
     padding-top: 0px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .list-wrapper ul{
@@ -388,19 +400,26 @@ h2.contact{
     padding: 0;
 }
 .overview-header{
-    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 .overview-header h1{
+    margin: 0px; /*reset the defeault margins*/
     margin-top: 30px;
     padding-block: 0;
 }
 .overview-header h2{
+    margin: 0px; /*reset the defeault margins*/
     font-size: 2rem;
     font-weight: 600;
     color: #BABABA;
 }
+.overview-paragraph{
+    line-height: 1.4em; /*reset defeault line-height*/
+}
 .overview-image{
-    padding: 0 15px;
+    padding: 0px;
 }
 .overview-image h3{
     font-size: 2rem;
@@ -411,7 +430,6 @@ h2.contact{
     width: 100%;
     padding: 0;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 a.case-study-button{
     color: #000000;
@@ -435,31 +453,63 @@ a.case-study-button:focus,
 a.case-study-button:active{
     background-color: #333333;
 }
+.info-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
 .info-detail h3{
     font-size: 2rem;
     font-weight: 400;
+    margin: 0; /*reset defeault margins*/
 }
 .info-detail p{
     font-size: 1.6rem;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.25);
-    padding-bottom: 20px;
+    margin: 0px; /*reset defeault margins*/
 }
 
 .overview-content{
     padding: 0 15px;
 }
-.container-section_case-study{
+.case-section{
     border-bottom: 1px solid rgb(0, 0, 0, 0.25);
-    margin: 0 15px;
+    margin: 20px 15px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
 }
-.container-section_case-study h3{
+.container-section_case-study{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.case-study_headers{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.case-study_headers h3{
     font-size: 2.6rem;
     font-weight: 600;
+    margin: 0; /*reset defeault margins*/
 }
-.container-section_case-study h4{
+.case-study_headers h4{
     font-size: 2rem;
     font-weight: 400;
+    margin: 0; /*reset defeault margins*/
+}
+.case-study_paragraph p{
+    margin: 0; /*reset defeault margins*/
+}
+.case-study_paragraph ul{
+    margin: 0; /*reset defeault margins*/
+}
+.case-study_image{
+    margin-top: 20px;
 }
 
 /*Medium devices (640px and larger) */
@@ -493,9 +543,5 @@ a.case-study-button:active{
  
 
 }
-
-
-
-
 
 
