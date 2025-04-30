@@ -951,8 +951,9 @@ a.case-study-button:active{
         font-size: 2.6rem;
     }
     .case-study_image{
-        margin-inline: 70px;
+        margin-inline: auto;
         margin-bottom: 50px;
+        max-width: 900px;
     }
     .case-study_paragraph p{
         font-size: 1.8rem;
