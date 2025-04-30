@@ -13,6 +13,7 @@ html, body{
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #FFFFFF;
@@ -24,7 +25,8 @@ body{
 }
 
 main{
-    padding-top: 133px;
+    padding-top: 136.51px;
+    padding-block-end: 20px;
 }
 
 #header-section{
@@ -127,7 +129,6 @@ header{
 .logo{
     max-width: 200px;
     display: block;
-    margin-left: 0;
 }
 
 /* sstyling navigation menu*/
@@ -225,16 +226,10 @@ nav>ul>li>a.current{
 .project-card{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     gap: 0px; /*space between image-wrapper and content-wrapper*/
     border-bottom: 1px solid rgb(0, 0, 0, 0.25);
 
-}
-.project-card_image-wrapper{
-    padding: 0 2rem; /*horizontal padding*/    
-}
-.project-card_content-wrapper{
-    padding: 0 2rem;
 }
 .project-card_content-wrapper h3{
     margin-top: 16px;
@@ -275,9 +270,6 @@ a.button_all-projects:active{
 }
 
 /*Syling main*/
-main{
-    padding-block-end: 20px;
-}
 
 /*Styling footer**/
 footer{
@@ -526,9 +518,19 @@ a.case-study-button:active{
 
 /*Medium devices (640px and larger) */
 @media only screen and (min-width:640px){
+    #header-section{
+        padding-top: 20px;
+    }
+    main{
+        padding-top: 107px;
+    }
+    
     /* Styling Work Page */
     .container{
-        margin: 0 20px ;
+        padding: 0 20px ;
+    }
+    .container--no-padding{
+        padding: 0;
     }
 
     header .container{
@@ -555,7 +557,7 @@ a.case-study-button:active{
         padding: 10px 0;
     }
     .h1-container{
-        margin: 0 20px;
+        padding: 0 20px;
     }
     .h1-container h1{
         font-size: 3rem;
@@ -575,11 +577,12 @@ a.case-study-button:active{
     h2.h1.section-title{
         font-size: 3.4rem;
     }
+
     .project-card{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 5rem 0;
-        gap: 0px;
+        padding: 5rem 2rem;
+        gap: 4rem;
         align-items: center;
     }
     .project-card:first-child{
@@ -623,6 +626,10 @@ a.case-study-button:active{
         padding-bottom: 10px;
         margin-bottom: 30px;
     }
+    .logo{
+        max-width: 250px;
+    }
+    
     .container-intro{
         color: #FFFFFF;
         max-width: 1200px;
@@ -631,10 +638,16 @@ a.case-study-button:active{
     }
     .intro_media-wrapper{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns:1fr;
         padding-top: 4rem;
         align-items: start;
     }
+    .intro_media-wrapper img{
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        object-position: 0 46%;
+    }
+
     .section-title_journey{
         margin-top: 40px;
         margin-bottom: 20px;
@@ -647,6 +660,11 @@ a.case-study-button:active{
     .section-title_creative-kit{
         margin-top: 40px;
         margin-bottom: 20px;
+    }
+    .lists{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;        
     }
     .list-wrapper h4{
         margin-top: 0; /*remove margin */
@@ -714,14 +732,22 @@ a.case-study-button:active{
 
 /*Large devices (1024px or larger)*/
 @media only screen and (min-width:1024px){
-    .container{
-        margin: 0 30px ;
+    main{
+        padding-top: 123px;
     }
+
+    .container{
+        padding: 0 30px ;
+    }
+    .container--no-padding{
+        padding: 0;
+    }
+
     header .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
+        padding: 20px 35px;
     }
     nav ul{
         display: flex;
@@ -738,8 +764,6 @@ a.case-study-button:active{
     }
     .h1-container{
         color: #FFFFFF;
-        max-width: 1200px;
-        margin: 0 30px;
     }
     .h1-container h1{
         font-size: 3.8rem;
@@ -774,20 +798,13 @@ a.case-study-button:active{
     .project-card{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 8rem 0;
+        padding: 8rem 3rem;
         gap: 50px;
         align-items: center;
     }
 
-    .project-card_content-wrapper{
-        padding: 0; /*remove from mobile version*/ 
-    }
     .project-card_content-wrapper p{
         font-size: 1.8rem;
-    }
-    .project-card_image-wrapper{
-        margin-left: 30px;
-        padding: 0; /*remove from mobile version*/    
     }
     .contact-box{
         padding: 50px 0; 
@@ -824,6 +841,13 @@ a.case-study-button:active{
         max-width: 1200px;
         margin: 0 auto;
         padding: 30px 15px;
+    }
+    .logo{
+        max-width: 270px;
+        margin-top: -5px;
+    }
+    .intro_media-wrapper img{
+        aspect-ratio: 1;
     }
     .intro-content-wrapper h1{
         color: #FFFFFF;
