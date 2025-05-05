@@ -25,7 +25,7 @@ body{
 }
 
 main{
-    padding-top: 136.51px;
+    padding-top: 104.51px;
     padding-block-end: 20px;
 }
 
@@ -515,6 +515,54 @@ a.case-study-button:active{
 .case-study_image{
     margin-top: 20px;
 }
+.icon{
+    display: block;
+}
+
+/*Mobile device (639px and smaller) */
+@media only screen and (max-width:639px){
+   .navtoggle li:not(:last-child){
+        display: none;
+    }
+    .navtoggle, .navtoggle.responsive{
+        position: relative;
+    }
+    .navtoggle li .icon{
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 24px;
+        padding-right: 0;
+    }
+    nav{
+        display: inline-block;
+        width: 100%;
+    } 
+    nav>ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    } 
+    .navtoggle.responsive nav {
+        padding: 24px 0 0;
+        text-align: right;
+      }
+      
+      .navtoggle.responsive li {
+        display: block;
+        padding: 10px 0;
+        border-top: 1px solid rgba(0,0,0);
+          }
+      
+      .navtoggle.responsive li:last-child {
+        padding: 0 0 10px;
+      }
+
+}
+
+
+
+
 
 /*Medium devices (640px and larger) */
 @media only screen and (min-width:640px){
@@ -522,7 +570,7 @@ a.case-study-button:active{
         padding-top: 20px;
     }
     main{
-        padding-top: 107px;
+        padding-top: 141.89px;
     }
     
     /* Styling Work Page */
@@ -548,7 +596,7 @@ a.case-study-button:active{
         display: flex;
         list-style: none;
         gap: 14px;
-        margin: 0;
+        margin:0;
         padding: 0;
         font-size: 2rem;
     }
@@ -727,13 +775,16 @@ a.case-study-button:active{
     .case-section:last-child{
         border-bottom: none;
     }
+    .icon{
+        display: none;
+    }
     }
 
 
 /*Large devices (1024px or larger)*/
 @media only screen and (min-width:1024px){
     main{
-        padding-top: 123px;
+        padding-top: 155.69px;
     }
 
     .container{
@@ -963,6 +1014,9 @@ a.case-study-button:active{
     }
     .case-section:last-child{
         border-bottom: none;
+    }
+    .icon{
+        display: none;
     }
     }
   
