@@ -570,7 +570,7 @@ a.case-study-button:active{
         padding-top: 20px;
     }
     main{
-        padding-top: 141.89px;
+        padding-top: 107px;
     }
     
     /* Styling Work Page */
@@ -581,12 +581,13 @@ a.case-study-button:active{
         padding: 0;
     }
 
-    header .container{
+    header .navtoggle{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
+        padding: 20px 0;
     }
+
     nav{
         width: auto;
         float: right;
@@ -784,7 +785,7 @@ a.case-study-button:active{
 /*Large devices (1024px or larger)*/
 @media only screen and (min-width:1024px){
     main{
-        padding-top: 155.69px;
+        padding-top: 123px;
     }
 
     .container{
@@ -794,11 +795,11 @@ a.case-study-button:active{
         padding: 0;
     }
 
-    header .container{
+    header .navtoggle{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 35px;
+        padding: 20px 0px;
     }
     nav ul{
         display: flex;
@@ -815,6 +816,7 @@ a.case-study-button:active{
     }
     .h1-container{
         color: #FFFFFF;
+        padding: 0 30px;
     }
     .h1-container h1{
         font-size: 3.8rem;
