@@ -461,20 +461,13 @@ h2.contact{
     font-size: 2rem;
     font-weight: 600;
 }
-.container-button--no-padding{
-    background-color: #000000;
-    width: 100%;
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 a.case-study-button{
-    color: #000000;
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px solid #000000;
     border-radius: 20px;
     padding: 10px 20px;
-    margin: 20px 15px;
+    margin: 10px 0px 50px 0px;
     font-size: 1.6rem;
     font-weight: 500;
     cursor: pointer;
@@ -853,6 +846,10 @@ a.case-study-button:active{
     a.case-study-button{
         margin-left: 50px;
     }
+    a.case-study-button{
+        margin: 10px 0px 0px 0px;
+    }
+    
     .case-section{
         margin-inline: 30px;
         margin-bottom: 60px;
@@ -1124,16 +1121,14 @@ a.case-study-button:active{
     .info-detail{
         margin-top: 0px;
     }
-    .container-button--no-padding{
-        margin-top: 50px;
-        margin-bottom: 80px;
-    }
     a.case-study-button{
-        margin-left: 50px;
+        margin: 10px 0px 50px 0px;
     }
+    
     .case-section{
         margin-inline: 30px;
         margin-bottom: 100px;
+        margin-top: 100px;
     }
     .case-study_texts{
         display: grid;
