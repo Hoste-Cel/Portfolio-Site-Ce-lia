@@ -100,6 +100,9 @@ a.button:focus,
 a.button:active{
     background-color: #333333;
 }
+a.button.inactive{
+    display: none;
+}
 img{
     width: 100%;
 }
