@@ -1110,13 +1110,16 @@ a.case-study-button:active{
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0rem 0;
-        gap: 10px;
+        gap: 0px;
         align-items: start;
         padding-top: 50px;
     }
     .overview-image{
-        padding-left: 50px;
+        padding-left: 80px;
         grid-template-columns: none;
+    }
+    .overview-image img{
+        width: 80%;
     }
     .info{
         margin-right: 30px;
