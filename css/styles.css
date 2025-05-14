@@ -1116,10 +1116,11 @@ a.case-study-button:active{
     }
     .overview-image{
         padding-left: 80px;
+        padding-top: 0;
         grid-template-columns: none;
     }
     .overview-image img{
-        width: 80%;
+        width: 60%;
     }
     .info{
         margin-right: 30px;
