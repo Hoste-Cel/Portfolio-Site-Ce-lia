@@ -901,12 +901,15 @@ a.case-study-button:active{
         justify-content: space-between;
         padding: 20px 0px;
     }
+    nav{
+        margin-left: 100px;
+    }
+
     nav ul{
         display: flex;
         list-style: none;
         gap: 100px;
         margin: 0;
-        padding: 0;
         font-size: 3rem;
     }
     .h1-container_background{
