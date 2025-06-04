@@ -581,7 +581,7 @@ a.case-study-button:active{
     .navtoggle li .icon{
         position: absolute;
         right: 0;
-        top: 2px;
+        top: -11px;
         font-size: 24px;
         padding-right: 20px;
     }
@@ -652,6 +652,9 @@ a.case-study-button:active{
         margin:0;
         padding: 0;
         font-size: 2rem;
+    }
+    nav ul li:last-child{
+        display: none;
     }
     .h1-container_background{
         width: 100%;
@@ -770,7 +773,7 @@ a.case-study-button:active{
         margin-bottom: 30px;
     }
     .logo{
-        max-width: 250px;
+        width: 250px;
     }
     
     .container-intro{
@@ -1101,7 +1104,7 @@ a.case-study-button:active{
         grid-template-columns: 1fr 1fr;
         padding: 1rem 0;
         gap: 20px;
-        align-items: start;
+        /*align-items: start;*/
     }
     .list-wrapper ul{
         padding-inline-start: 20px;
