@@ -26,7 +26,7 @@ body{
 
 main{
     padding-top: 104.51px;
-    padding-block-end: 20px;
+    padding-block-end: 0px;
 }
 
 #header-section{
@@ -115,8 +115,10 @@ header{
     width: 100%;
     /* add bottom line */
     border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+    z-index: 9999;
 }
-/*layout styling*/
+
+    /*layout styling*/
 .container{
     padding: 0 15px;
 }
@@ -151,11 +153,12 @@ nav>ul>li:first-child{
     padding-left: 0;
 }
 nav>ul>li>a{
-    padding-right: 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
     font-weight: 300;
     text-decoration: none;
     color: #000000;
+    display: block;
 }
 nav>ul>li>a:hover,
 nav>ul>li>a:focus{
@@ -167,7 +170,7 @@ nav>ul>li>a:visited{
     color: #000000;
 }
 nav>ul>li>a.current{
-    text-decoration: line-through;
+    font-weight: bold;
 }
 
 /*styling hero-section*/
@@ -409,6 +412,14 @@ h2.contact{
     margin-top: 0;
 }
 
+/* Styling list wrapper*/
+.list-wrapper{
+    background-color: #e8e8e8;
+    border-radius: 1rem;
+    padding: 3em 2em;
+    margin-bottom: 20px;
+}
+
 /*styling section title "Creative Kit"*/
 .section-title_creative-kit{
     display: flex;
@@ -572,7 +583,7 @@ a.case-study-button:active{
         right: 0;
         top: 2px;
         font-size: 24px;
-        padding-right: 0;
+        padding-right: 20px;
     }
     nav{
         display: inline-block;
@@ -590,7 +601,7 @@ a.case-study-button:active{
       
       .navtoggle.responsive li {
         display: block;
-        padding: 10px 0;
+        padding: 0;
         border-top: 1px solid rgba(0,0,0);
           }
       
@@ -1072,6 +1083,8 @@ a.case-study-button:active{
     }
     .intro_media-wrapper{
         grid-template-columns: none;
+        position: sticky;
+        top: 110px;
     }
     .section-title_journey{
         margin-bottom: 20px;
